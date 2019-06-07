@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -40,7 +41,7 @@ body {
 /* The Overlay (background) */
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
-  height: 96vh;
+  height: 100%;
   width: 0;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -116,6 +117,7 @@ body {
 
 .lang {
   margin-top: 10rem;
+  text-align: center;
 }
 
 .lang-opt {
@@ -192,4 +194,443 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   font-size: 1.5rem;
+}
+
+/* This part contains the CSS for the About part of the portfolio page */
+
+.content {
+  display: grid;
+}
+
+.primcol {
+  color: #a99561;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #000000;
+  color: white;
+  padding: 10rem;
+  grid-gap: 5rem;
+}
+
+.section-heading {
+  font-size: 3.2rem;
+}
+
+.about-text {
+  font-size: 1.6rem;
+}
+
+.download {
+  margin-top: 3rem;
+}
+
+.dl-btn {
+  text-decoration: none;
+  color: white;
+  border: 0.2rem solid white;
+  border-radius: 8%;
+  padding: 1rem 3rem 1rem 3rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+/* This part contains the CSS for the Contact info slab */
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-image: linear-gradient(to right, #3b3737, #000000);
+  color: white;
+  text-align: left;
+  padding: 4rem;
+  font-size: 1.6rem;
+}
+
+.contact-info__child {
+  padding-left: 9rem;
+}
+
+.contact-info div h3 {
+  font-size: 2.4rem;
+  color: #eee;
+  font-weight: 700;
+}
+
+.contact-info div p {
+  font-size: 1.6;
+  color: #777;
+}
+
+/* This part contains the CSS for the Expertise Section */
+
+.expertise {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 10rem;
+}
+
+.expertise-griddy {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+  text-align: left;
+  margin: 8rem 3rem 3rem 0rem;
+  grid-gap: 5rem;
+}
+
+.exp-subgrid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: baseline;
+}
+
+.prt-num {
+  padding-top: 8rem;
+  text-align: center;
+  font-size: 3.2rem;
+}
+
+.expertise-subhead {
+  text-align: right;
+  padding-right: 1rem;
+  color: #a57a2b;
+  font-size: 1.8rem;
+}
+
+.exp-colo {
+  color: #b4adad;
+  font-size: 1.4rem;
+}
+
+.column-heading {
+  font-size: 1.8rem;
+  color: #b4adad;
+}
+
+/* This part contains the CSS for the Skills section */
+
+.skills {
+  background-image: linear-gradient(to right bottom, #000000, #3b3737);
+  text-align: center;
+  color: white;
+}
+
+.skills-griddy {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
+  padding-right: 200px;
+  padding-left: 200px;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.prt-head {
+  padding-bottom: 80px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.skills-internal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.sk-light-grey {
+  background-color: lightgray;
+}
+
+.sk-round {
+  border-radius: 4px;
+}
+
+.sk-center {
+  text-align: center;
+}
+
+.sk-container {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.sk-col {
+  background-color: #a57a2b;
+  height: 5px;
+}
+
+.sk-in-color {
+  color: #a57a2b;
+  font-size: 2.2rem;
+}
+
+/* This part contains the CSS for the Portfolio section */
+
+.portfolio {
+  background-color: #000000;
+  color: #fff;
+}
+
+.portfolio-griddy {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.portfolio-img {
+  height: 40rem;
+  min-width: 100%;
+  max-width: 100%;
+}
+.overlay-portfolio {
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.arrow-head-text {
+  transform: rotate(270deg);
+  margin: 0.3rem;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  text-align: left;
+  z-index: 2;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  z-index: 2;
+  padding-bottom: 10px;
+}
+
+.container div.top-left {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.container div.bottom-right {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* This part contains the CSS for the Blog Section */
+
+.blog {
+  background-color: #000000;
+  color: white;
+  padding: 5rem 10rem 5rem 10rem;
+}
+
+.blog-griddy {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+}
+
+.blog-images {
+  display: inline-block;
+  height: 40rem;
+  max-width: 100%;
+}
+
+.blurred {
+  background-color: rgba(0, 0, 0, 0.603);
+  padding: 10px;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.blogger {
+  position: relative;
+}
+
+.date-text {
+  font-size: 2rem;
+}
+
+/* More Button */
+
+.more-btn {
+  display: inline-block;
+  background-color: #a99561;
+  text-align: center;
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  height: 5.5rem;
+  width: 12rem;
+  margin-top: 3rem;
+}
+
+.more-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.more-btn--center {
+  text-align: center;
+}
+
+/* This part contains the CSS for Feedback section */
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  background-color: #000;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding: 50px;
+}
+
+textarea {
+  width: 90%;
+  background-color: #000;
+  border-bottom: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+}
+
+input {
+  width: 80%;
+}
+
+.subject {
+  grid-column: span 2;
+}
+
+.email {
+  grid-column: span 2;
+}
+
+.submit-btn {
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+  grid-column-end: 3;
+}
+
+.feedback {
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.feedback-form {
+  padding: 2rem 5rem 2rem 10rem;
+}
+
+input[type="text"],
+textarea {
+  border: none;
+  border-bottom: 2px solid #fff;
+  background-color: #000;
+}
+
+.sendit {
+  background-color: #a99561;
+  text-align: center;
+  display: inline-block;
+  padding: 1rem 3rem;
+  width: 12rem;
+  height: 4.8rem;
+  margin-left: 225px;
+}
+
+.send {
+  text-decoration: none;
+  color: white;
+}
+
+.feedback .feedback-form p {
+  margin: 4.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.contact-info-rem {
+  background-image: linear-gradient(0deg, #000, #777);
+  color: white;
+  padding-left: 2rem;
+  font-size: 2rem;
+}
+
+/* This pqart contains the CSS for the Footer */
+
+.social-link-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-image: linear-gradient(90deg, #000, #777);
+  border: 5px solid black;
+  padding: 2rem 10rem 1.6rem 10rem;
+}
+
+ul.social-list img {
+  padding: 5px;
+  width: 4rem;
+  height: 4rem;
+}
+
+ul.social-list {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 100px;
+  float: right;
+}
+
+ul.social-list li {
+  display: inline-block;
+}
+
+.author {
+  color: white;
+  font-size: 2rem;
+  padding-top: 0.4rem;
+}
+
+/* This part contains the CSS for Back to the Top button */
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #a99561; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #777; /* Add a dark-grey background on hover */
+  color: #fff;
 }
