@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <title>Islam Khairy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <a href="#" class="powermenu" onclick="openNav()">
+          <img
+            class="powermenu__menu-btn"
+            src="img/icon menu.png"
+            alt="menu button"
+          />
+        </a>
+
+        <div id="myNav" class="overlay">
+          <!-- Button to close the overlay navigation -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+
+          <!-- Overlay content -->
+          <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+
+        <div class="social">
+          <a href="#" class="links">Facebook</a>
+          <a href="#" class="links">Twitter</a>
+          <a href="#" class="links">LinkedIn</a>
+          <a href="#" class="links">Behance</a>
+        </div>
+
+        <div class="lang">
+          <a href="#" class="lang-opt">Urdu</a>
+          <a href="#" class="lang-opt">French</a>
+        </div>
+      </nav>
+
+      <div class="main">
+        <img src="img/logo.png" alt="brand logo" class="logo" />
+
+        <h1 class="main-heading">
+          <span class="main-heading__sub">I'm</span>
+          <span class="main-heading__sub">Islam</span>
+          <span class="main-heading__sub">Khairy</span>
+        </h1>
+
+        <div class="carousel bottom-left">
+          <a href="#">
+            <img src="img/arrow left.png" alt="Go Left" />
+          </a>
+          <span class="carousel--elem1">01</span>
+          <span class="carousel--elem2">/</span>
+          <span class="carousel--elem3"><sup>03</sup></span>
+          <a href="#">
+            <img src="img/arrow right.png" alt="Go Right" />
+          </a>
+        </div>
+
+        <div class="contact-link">
+          <a href="">contact</a>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      /* Open when someone clicks on the span element */
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      /* Close when someone clicks on the "x" symbol inside the overlay */
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+  </body>
+</html>
